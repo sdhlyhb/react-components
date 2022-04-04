@@ -1,10 +1,16 @@
 // TODO
+
 var GroceryList = (props) => (
-  <ul>
+
+    <div>
+    <h2>My Grocery List</h2>
+    <ul>
     {props.groceryItems.map((item) =>
     <GroceryListItem item = {item}/>
     )}
   </ul>
+  </div>
+
 
 );
 
@@ -53,4 +59,4 @@ class GroceryListItem extends React.Component {
 
 // );
 
-ReactDOM.render(<GroceryList groceryItems={['kale', 'cucumber', 'milk']}  />, document.getElementById("app"));
+ReactDOM.render(<GroceryList groceryItems={['kale', 'cucumber', 'milk']}/>, document.getElementById("app"));
